@@ -14,6 +14,6 @@ document.querySelector('#releaseForm').addEventListener('submit',e=>{
  if(!changes.length){error.textContent='Добавьте хотя бы одно изменение.';return;}
  const version=getNextVersion(currentVersion(),f.get('level'));
  releases.unshift({id:nextId('REL',releases),version,date:f.get('date'),level:f.get('level'),changes});
- if(saveData('releases',releases)){e.currentTarget.reset();document.querySelector('#releaseDate').value=new Date().toLocaleDateString('en-CA');renderReleases();notify(`Релиз ${version} сохранён`);}
+ if(saveData('releases',releases)){e.currentTarget.reset();document.querySelector('#releaseDate').value=new Date().toLocaleDateString('en-CA');renderReleases();notify(`Релиз ${version} сохранён`);document.dispatchEvent(new Event('ssh:saved'));}
 });
 renderReleases();

@@ -1,9 +1,9 @@
 /* Учебные записи. Все организации и участники вымышлены. */
 const startDeployments = [
-  {id:'DEP-001',client:'Учебный отдел Север',product:'Система расписания',version:'v1.0.0',stage:'training',owner:'Морозова И.',plannedDate:'2026-11-20',done:6,total:8},
+  {id:'DEP-001',client:'Учебный отдел Север',product:'Система расписания',version:'v1.1.0',stage:'training',owner:'Морозова И.',plannedDate:'2026-11-20',done:6,total:8},
   {id:'DEP-002',client:'Центр «Орион»',product:'Портал заявок',version:'v1.0.0',stage:'setup',owner:'Абрамов Д.',plannedDate:'2026-11-26',done:3,total:10},
-  {id:'DEP-003',client:'Библиотека «Линия»',product:'Каталог ресурсов',version:'v1.0.0',stage:'planning',owner:'Ким А.',plannedDate:'2026-12-02',done:1,total:6},
-  {id:'DEP-004',client:'Студия «Маяк»',product:'База знаний',version:'v1.0.0',stage:'production',owner:'Егоров С.',plannedDate:'2026-11-01',done:10,total:10}
+  {id:'DEP-003',client:'Библиотека «Линия»',product:'Каталог ресурсов',version:'v1.1.0',stage:'planning',owner:'Ким А.',plannedDate:'2026-12-02',done:1,total:6},
+  {id:'DEP-004',client:'Студия «Маяк»',product:'База знаний',version:'v1.1.0',stage:'production',owner:'Егоров С.',plannedDate:'2026-11-01',done:10,total:10}
 ];
 const startIncidents = [
   {id:'INC-001',title:'Не формируется недельный отчёт',priority:'high',status:'in_progress',createdAt:'2026-11-03T14:00:00+06:00',resolvedAt:null},
@@ -20,7 +20,8 @@ const startRequests = [
   {id:'REQ-004',title:'Обновить зависимости графиков',type:'preventive',status:'done',targetVersion:'v1.1.0'}
 ];
 const startReleases = [
-  {id:'REL-001',version:'v1.0.0',date:'2026-11-03',level:'major',changes:['Первый рабочий прототип','Внедрения, инциденты, заявки и релизы']}
+  {id:'REL-001',version:'v1.0.0',date:'2026-11-03',level:'major',changes:['Первый рабочий прототип','Внедрения, инциденты, заявки и релизы']},
+  {id:'REL-002',version:'v1.1.0',date:'2026-11-03',level:'minor',changes:['Добавлены фильтры и поиск обращений','Улучшены мобильная навигация и сообщения форм','Добавлены проверки SLA и сохранения данных']}
 ];
 const settings = {slaHours:{critical:4,high:8,medium:24,low:72}};
 const LABELS = {

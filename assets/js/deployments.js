@@ -10,7 +10,7 @@ document.querySelector('#deploymentForm').addEventListener('submit',e=>{
  e.preventDefault();const f=new FormData(e.currentTarget);const done=Number(f.get('done')),total=Number(f.get('total'));const error=document.querySelector('#deploymentError');error.textContent='';
  if(!String(f.get('client')).trim()||!String(f.get('product')).trim()||!String(f.get('owner')).trim()||done<0||total<1||done>total){error.textContent='Проверьте поля и количество выполненных задач.';return;}
  deployments.unshift({id:nextId('DEP',deployments),client:String(f.get('client')).trim(),product:String(f.get('product')).trim(),version:String(f.get('version')).trim(),stage:f.get('stage'),owner:String(f.get('owner')).trim(),plannedDate:f.get('plannedDate'),done,total});
- if(saveData('deployments',deployments)){renderDeployments();e.currentTarget.reset();notify('Внедрение добавлено');}
+ if(saveData('deployments',deployments)){renderDeployments();e.currentTarget.reset();notify('Внедрение добавлено');document.dispatchEvent(new Event('ssh:saved'));}
 });
 table.addEventListener('click',e=>{
  const btn=e.target.closest('button[data-action]');if(!btn)return;const item=deployments.find(x=>x.id===btn.dataset.id);if(!item)return;

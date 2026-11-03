@@ -10,7 +10,7 @@ typeFilter.addEventListener('change',renderRequests);statusFilter.addEventListen
 document.querySelector('#requestForm').addEventListener('submit',e=>{
  e.preventDefault();const f=new FormData(e.currentTarget),title=String(f.get('title')).trim();const error=document.querySelector('#requestError');error.textContent='';if(!title){error.textContent='Введите название заявки.';return;}
  requests.unshift({id:nextId('REQ',requests),title,type:f.get('type'),status:'new',targetVersion:String(f.get('targetVersion')).trim()});
- if(saveData('requests',requests)){e.currentTarget.reset();typeFilter.value='all';statusFilter.value='all';renderRequests();notify('Заявка создана');}
+ if(saveData('requests',requests)){e.currentTarget.reset();typeFilter.value='all';statusFilter.value='all';renderRequests();notify('Заявка создана');document.dispatchEvent(new Event('ssh:saved'));}
 });
 table.addEventListener('click',e=>{const btn=e.target.closest('button[data-action]');if(!btn)return;const r=requests.find(x=>x.id===btn.dataset.id);if(!r)return;if(btn.dataset.action==='plan')r.status='planned';if(btn.dataset.action==='done')r.status='done';if(saveData('requests',requests)){renderRequests();notify('Статус заявки обновлён');}});
 renderRequests();

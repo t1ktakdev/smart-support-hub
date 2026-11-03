@@ -13,7 +13,7 @@ document.querySelector('#incidentForm').addEventListener('submit',e=>{
  e.preventDefault();const input=document.querySelector('#incidentTitle'),error=document.querySelector('#incidentError'),title=input.value.trim();error.textContent='';input.removeAttribute('aria-invalid');
  if(!title){error.textContent='Введите название обращения.';input.setAttribute('aria-invalid','true');input.focus();return;}
  const f=new FormData(e.currentTarget);incidents.unshift({id:nextId('INC',incidents),title,priority:f.get('priority'),status:'new',createdAt:new Date().toISOString(),resolvedAt:null});
- if(saveData('incidents',incidents)){e.currentTarget.reset();filters.status.value='all';filters.priority.value='all';filters.search.value='';renderIncidents();notify('Инцидент зарегистрирован');}
+ if(saveData('incidents',incidents)){e.currentTarget.reset();filters.status.value='all';filters.priority.value='all';filters.search.value='';renderIncidents();notify('Инцидент зарегистрирован');document.dispatchEvent(new Event('ssh:saved'));}
 });
 table.addEventListener('click',e=>{
  const button=e.target.closest('button[data-action]');if(!button)return;const item=incidents.find(x=>x.id===button.dataset.id);if(!item||item.status==='resolved')return;
