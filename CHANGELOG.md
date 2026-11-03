@@ -23,4 +23,4 @@
 
 ## Публикация
 
-Исходники и оба тега подготовлены локально. Репозиторий GitHub создан, но публикация кода и GitHub Pages заблокирована политикой подключения ForgeBridge (`git.push` / `scope-deny`). До разрешения операции локальная версия является основной проверенной копией.
+Исходники, ветка `main` и теги `v1.0.0`, `v1.1.0` опубликованы в https://github.com/t1ktakdev/smart-support-hub. GitHub Pages включён из корневой папки ветки `main`: https://t1ktakdev.github.io/smart-support-hub/.

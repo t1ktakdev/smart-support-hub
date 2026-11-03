@@ -53,7 +53,7 @@ python tests/verify_ui.py
 
 Репозиторий создан: https://github.com/t1ktakdev/smart-support-hub.
 
-**Важно:** код хранится в локальном Git. Попытка отправки в GitHub заблокирована правилом ForgeBridge `scope-deny` для `git.push`; GitHub Pages **не опубликован**. Доступ к push должен быть официально разрешён в конфигурации подключения перед публикацией.
+**Публикация завершена:** исходники находятся в ветке `main` GitHub, теги `v1.0.0` и `v1.1.0` загружены. Демонстрация: https://t1ktakdev.github.io/smart-support-hub/ .
 
 Реальные замечания, найденные собственными тестами (не отзывом одногруппника): [Issue №1](https://github.com/t1ktakdev/smart-support-hub/issues/1) и [Issue №2](https://github.com/t1ktakdev/smart-support-hub/issues/2). Исправления реализованы и проверены локально.
 
