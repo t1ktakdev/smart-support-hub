@@ -1,0 +1,28 @@
+# Проверки интерфейса
+
+- **PASS** Dashboard renders correct open incident count
+- **PASS** Five navigation sections
+- **PASS** Initial SLA success 67%
+- **PASS** Chart.js is locally loaded and charts initialized
+- **PASS** List is visible before create form
+- **PASS** New incident dialog opens
+- **PASS** Empty incident title is rejected
+- **PASS** Inline error clears on typing
+- **PASS** Successful create closes the dialog
+- **PASS** High priority incident appears
+- **PASS** Status filtering works
+- **PASS** Search filtering works
+- **PASS** Incident can be resolved
+- **PASS** Dashboard reflects resolved incident
+- **PASS** Created incident remains after page reload
+- **PASS** Maintenance request created and dialog closes
+- **PASS** Deployment created and dialog closes
+- **PASS** SemVer patch/minor/major preview
+- **PASS** Theme persists across reload
+- **PASS** Corrupted localStorage is handled
+- **PASS** Desktop no horizontal overflow
+- **PASS** 768px layout has no horizontal overflow
+- **PASS** 390px layout has no horizontal overflow
+- **PASS** Mobile menu button visible
+- **PASS** Mobile sidebar opens
+- **PASS** No severe JavaScript errors

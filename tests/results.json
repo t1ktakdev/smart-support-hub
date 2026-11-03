@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-04T00:10:58",
+  "browser": "Google Chrome / Selenium (local HTTP server)",
+  "passed": 26,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Dashboard renders correct open incident count",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Five navigation sections",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Initial SLA success 67%",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Chart.js is locally loaded and charts initialized",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "List is visible before create form",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "New incident dialog opens",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Empty incident title is rejected",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Inline error clears on typing",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Successful create closes the dialog",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "High priority incident appears",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Status filtering works",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Search filtering works",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Incident can be resolved",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Dashboard reflects resolved incident",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Created incident remains after page reload",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Maintenance request created and dialog closes",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Deployment created and dialog closes",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "SemVer patch/minor/major preview",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Theme persists across reload",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Corrupted localStorage is handled",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Desktop no horizontal overflow",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "768px layout has no horizontal overflow",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "390px layout has no horizontal overflow",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Mobile menu button visible",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "Mobile sidebar opens",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "test": "No severe JavaScript errors",
+      "status": "PASS",
+      "details": ""
+    }
+  ]
+}
